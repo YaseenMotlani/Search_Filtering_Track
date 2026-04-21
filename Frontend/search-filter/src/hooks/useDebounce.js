@@ -7,13 +7,16 @@
 import { useState, useEffect } from "react";
 
 const useDebounce = (value, delay = 300) => {
+    // debouncedValue = "delayed copy" of value
   const [debouncedValue, setDebouncedValue] = useState(value);
 
   useEffect(() => {
+    // Timer start karo
     const timer = setTimeout(() => {
       setDebouncedValue(value);
     }, delay);
 
+    // Cleanup — agar value phir change ho toh purana timer cancel
     return () => clearTimeout(timer); // cleanup
   }, [value, delay]);
 
