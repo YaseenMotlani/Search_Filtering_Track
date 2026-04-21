@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-const student = require("./data");
+const students = require("./data");
 
 const app = express();
 app.use(cors());
