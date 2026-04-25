@@ -24,7 +24,7 @@ export default function App() {
   // ─── Debounced Values ───────────────────────────────────
   // API sirf inhe watch karegi — raw state ko nahi
   const debouncedSearch = useDebounce(search, 400);
-  const debouncedSkill  = useDebounce(skill, 400);   // ✅ SKILL PE BHI DEBOUNCE
+  const debouncedSkill  = useDebounce(skill, 400);   // SKILL PE BHI DEBOUNCE
   const debouncedMin    = useDebounce(minScore, 400);
   const debouncedMax    = useDebounce(maxScore, 400);
 
