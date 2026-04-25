@@ -3,7 +3,7 @@ export default function FilterPanel({
   minScore, setMinScore,
   maxScore, setMaxScore,
   skills,
-  onReset  // ✅ App.jsx se aata hai
+  onReset  //  App.jsx se aata hai
 }) {
   return (
     <div className="filter-panel">
@@ -22,7 +22,7 @@ export default function FilterPanel({
         <input
           type="range"
           min="0"
-          max={maxScore}   // ✅ min slider maxScore se aage nahi ja sakta
+          max={maxScore}   // min slider maxScore se aage nahi ja sakta
           step="1"
           value={minScore}
           onChange={(e) => setMinScore(Number(e.target.value))}
@@ -33,7 +33,7 @@ export default function FilterPanel({
         <label>Max Score: <strong>{maxScore}</strong></label>
         <input
           type="range"
-          min={minScore}   // ✅ max slider minScore se peeche nahi ja sakta
+          min={minScore}   // max slider minScore se peeche nahi ja sakta
           max="100"
           step="1"
           value={maxScore}
@@ -41,7 +41,7 @@ export default function FilterPanel({
         />
       </div>
 
-      {/* ✅ onReset directly App.jsx ka handleReset call karta hai */}
+      {/* onReset directly App.jsx ka handleReset call karta hai */}
       <button className="reset-btn" onClick={onReset}>
         Reset Filters
       </button>
