@@ -104,3 +104,47 @@ body {
   padding: 4px 10px; border-radius: 20px;
   font-size: 0.78rem; color: #7c3aed;
 }
+
+/* ─── Paste this into your index.css ─── */
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+
+.page-btn {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(255,255,255,0.05);
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.page-btn:hover:not(:disabled) {
+  background: rgba(139, 92, 246, 0.3);
+  border-color: #8b5cf6;
+}
+
+.page-btn.active {
+  background: #8b5cf6;
+  border-color: #8b5cf6;
+  font-weight: bold;
+}
+
+.page-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.hint {
+  color: #f59e0b;
+  font-size: 13px;
+  margin: 4px 0 8px 4px;
+}
